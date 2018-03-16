@@ -1,0 +1,13 @@
+version: "3.2"
+services:
+  frontend:
+    build: frontend
+    user: "node"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+    volumes:
+      - ./frontend/app/:/home/frontend/:Z
+    ports:
+      - 3001:3000
+    command: "npm start"
