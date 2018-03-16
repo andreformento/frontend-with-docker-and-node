@@ -14,6 +14,6 @@ docker-compose up --build
 If you want generate new project with `express` use:
 
 ```bash
-
+docker exec
 ```
 
